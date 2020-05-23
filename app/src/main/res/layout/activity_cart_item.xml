@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".POS.CartItemActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/semiwhite"
+        >
+
+
+
+        <RelativeLayout
+            android:id="@+id/firstHolder"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/semiwhite"
+                android:layout_marginBottom="110dp"
+                >
+
+                <TextView
+                    android:id="@+id/titleCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/blue"
+                    android:text="Cart"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_below="@+id/titleITEMS"
+                    android:id="@+id/cartitem"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/semiwhite"
+                    android:layout_marginBottom="15dp"
+                    >
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                <LinearLayout
+                    android:id="@+id/titleITEMS"
+                    android:layout_below="@id/titleCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.150"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/titleProductCodeCart"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_below="@id/txtProductNameCart"
+                        android:layout_height="wrap_content"
+                        android:text="Code"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/segoeui"
+
+                        />
+
+
+                    <TextView
+                        android:layout_weight="1.50"
+                        android:id="@+id/titleProductNameCart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:textSize="11sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="5dp"
+
+                        />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/titleProductQuantityCart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="5dp"
+
+                        />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/titleProductPriceCart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Price"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="5dp"
+
+                        />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/titleProductDiscount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Discount"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="5dp"
+
+                        />
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/titleProductTotalPriceCart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Total Price"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:textSize="11sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="5dp"
+
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/pricesholder"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_above="@id/buttonHolder"
+                android:background="@color/semiwhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/titlesubtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUBTOTAL:"
+                    android:fontFamily="@font/segoeui"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/blue"
+                    />
+                <TextView
+                    android:id="@+id/txtsubtotal"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Total"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="@color/darkBlue"
+
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/titlesubtotal"
+                    app:autoSizeMaxTextSize="10sp"
+                    app:autoSizeMinTextSize="4sp"
+                    app:autoSizeStepGranularity="0.5sp"
+                    app:autoSizeTextType="uniform"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/titlediscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DISCOUNT:"
+                    android:fontFamily="@font/segoeui"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_below="@id/titlesubtotal"
+                    />
+                <TextView
+                    android:id="@+id/txtdiscount"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Discount"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkBlue"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_below="@id/titlesubtotal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/titlesubtotal"
+
+                    app:autoSizeMaxTextSize="10sp"
+                    app:autoSizeMinTextSize="4sp"
+                    app:autoSizeStepGranularity="0.5sp"
+                    app:autoSizeTextType="uniform"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/titletotalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/segoeui"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="2dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txttotalprice"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/segoeui"
+                    android:textStyle="bold"
+                    android:layout_below="@id/titletotalprice"
+                    android:textSize="22sp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:textAlignment="textEnd"
+
+
+                    app:autoSizeMaxTextSize="22sp"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeStepGranularity="0.5sp"
+                    app:autoSizeTextType="uniform"
+
+                    />
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/buttonHolder"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/semiwhite"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/discardcart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+
+                    android:background="@drawable/discard"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight=".75"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/paymentcart"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/buttonHolder"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/payment" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</FrameLayout>

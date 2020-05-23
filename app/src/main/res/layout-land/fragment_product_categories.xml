@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.ProductCategories">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/semiwhite">
+
+
+        <RelativeLayout
+            android:id="@+id/firstHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewProductCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title"></androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+
+
+                android:id="@+id/displaytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerviewEmployeeType"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Employee type"
+                android:text="asdsasadasd"
+                android:textColor="@color/white"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/secondHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@color/semiwhite"
+
+
+            >
+
+
+            <EditText
+                android:id="@+id/edittxtProductCategory"
+
+                android:layout_marginLeft="2dp"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rounded_border"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:hint="Product Category"
+                android:maxLength="20"
+                android:fontFamily="@font/segoeui"
+                android:padding="5dp" />
+
+
+            <Button
+                android:id="@+id/btnAddProductCategory"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/edittxtProductCategory"
+                android:background="@drawable/add" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

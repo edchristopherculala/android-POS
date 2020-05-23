@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+   >
+
+    <ImageView
+        android:id="@+id/btnCloseApp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/x"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+
+
+            >
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:id="@+id/applogo"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/applogo"
+                />
+
+            <TextView
+                android:id="@+id/txtTrial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@id/applogo"
+                android:fontFamily="@font/segoeui"
+                android:layout_centerHorizontal="true"
+                android:text="Click this to activate trial."
+
+                />
+
+            <EditText
+                android:layout_below="@id/txtTrial"
+                android:padding="5dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edittxtUSERNAME"
+                android:hint="Username"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="@drawable/inputfield"
+                
+                android:maxLines="1"
+                android:layout_centerHorizontal="true"
+                />
+            <EditText
+                android:padding="5dp"
+                android:layout_below="@id/edittxtUSERNAME"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/edittxtPASSWORD"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="@drawable/inputfield"
+             
+                android:maxLines="1"
+                android:maxLength="20"
+                />
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/edittxtPASSWORD"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="@drawable/login"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

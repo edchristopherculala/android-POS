@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/semiwhite"
+
+    android:theme="@style/Theme.AppCompat.Dialog"
+    tools:context=".POS.UpdateQuantityActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/updateProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/segoeui"
+            android:text="Product Name"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/titleQuantityUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateProductName"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/segoeui"
+            android:text="Quantity"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/edttextupdatequantity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/titleQuantityUpdate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/inputfield"
+            android:inputType="number"
+            android:maxLength="7"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/okayupdatequantity"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/edttextupdatequantity"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/confirmupdatequantity" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

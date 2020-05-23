@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="250dp"
+android:layout_height="200dp"
+android:theme="@style/Theme.AppCompat.Dialog"
+
+android:background="@color/semiwhite"
+tools:context="com.ed.chris.androidpos.admin.admin_adapters.Add_Stocks_Dialog">
+
+<RelativeLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/updateProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/segoeui"
+        android:textColor="@color/blue"
+
+        />
+
+    <TextView
+        android:id="@+id/titleQuantityUpdate"
+        android:layout_below="@+id/updateProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Stock"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/segoeui"
+        android:textColor="@color/black"
+
+        />
+
+
+    <EditText
+        android:id="@+id/edttextupdatestocks"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/titleQuantityUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/inputfield"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:maxLength="7"
+        android:textColor="@color/black"
+
+
+        />
+    <ImageView
+        android:id="@+id/okayupdatequantityQ"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/edttextupdatestocks"
+        android:layout_width="170dp"
+
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/confirmupdatequantity"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

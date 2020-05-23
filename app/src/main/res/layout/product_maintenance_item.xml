@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/select_layout_5"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="1dp"
+    android:layout_weight="4"
+    android:background="@drawable/rounded_border_items"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/txtProductCode"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/txtProductDescription"
+        android:layout_weight="0.4"
+        android:fontFamily="@font/segoeui"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Product Code"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+
+        app:autoSizeMaxTextSize="14sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="4sp"
+        app:autoSizeTextType="uniform"
+
+
+        android:textStyle="normal" />
+
+    <ImageView
+        android:layout_weight="0.5"
+        android:id="@+id/productImage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="4dp"
+        android:background="@drawable/camera"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtProductDescription"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fontFamily="@font/segoeui"
+        android:gravity="center"
+        android:text="Product Desc"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:maxLines="1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+
+        app:autoSizeMaxTextSize="16sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeStepGranularity="4sp"
+        app:autoSizeTextType="uniform"
+        tools:ignore="RtlCompat" />
+
+
+    <TextView
+        android:id="@+id/txtproductsellprice"
+        android:layout_weight="0.650"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Price"
+        android:textSize="14sp"
+        android:fontFamily="@font/segoeui"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:maxLines="1"
+
+        app:autoSizeMaxTextSize="14sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeStepGranularity="4sp"
+        app:autoSizeTextType="uniform"
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/txtProductQUANTITY"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.650"
+        android:fontFamily="@font/segoeui"
+        android:gravity="center"
+        android:text="Qty"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+
+</LinearLayout>

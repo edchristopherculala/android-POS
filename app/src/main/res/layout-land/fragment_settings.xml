@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".admin.SettingsFragment">
+
+
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:id="@+id/settingsReceiptHolder"
+       android:layout_below="@id/titlelayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingLeft="5dp"
+       android:paddingRight="5dp"
+       android:paddingBottom="40dp"
+       android:paddingTop="20dp"
+       android:background="@drawable/rounded_border_items"
+       android:elevation="4dp"
+       >
+
+
+      <TextView
+          android:id="@+id/titlelayout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="30sp"
+          android:text="Settings"
+          android:layout_margin="5dp"
+          android:fontFamily="@font/segoeui"
+          android:textColor="@color/blue"
+          />
+      <TextView
+          android:layout_below="@id/titlelayout"
+          android:id="@+id/titlereceipt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Receipt "
+          android:layout_marginLeft="5dp"
+          android:textSize="15sp"
+          android:textStyle="bold"
+
+          />
+
+
+      <TextView
+          android:id="@+id/titlePRODUCTNAME"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/titlereceipt"
+          android:layout_marginLeft="10dp"
+          android:text="App name"
+          android:layout_marginTop="10dp"
+          android:fontFamily="@font/segoeui"
+          />
+
+      <EditText
+          android:id="@+id/edittxtAPPNAME"
+          android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.-"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_below="@id/titlePRODUCTNAME"
+          android:background="@drawable/rounded_border_items"
+          android:maxLines="1"
+          android:maxLength="15"
+          android:fontFamily="@font/segoeui"
+
+          android:singleLine="true"
+          android:padding="3dp"
+          android:textSize="17sp"
+
+
+          />
+
+
+      <TextView
+          android:id="@+id/titleCOMPANYADDRESS"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edittxtAPPNAME"
+          android:layout_marginLeft="10dp"
+          android:text="Company address"
+          android:layout_marginTop="5dp"
+          android:fontFamily="@font/segoeui"
+          />
+
+      <EditText
+          android:id="@+id/edittxtCOMPANYADDRESS"
+          android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.-"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_below="@id/titleCOMPANYADDRESS"
+          android:background="@drawable/rounded_border_items"
+          android:maxLines="1"
+          android:maxLength="20"
+          android:fontFamily="@font/segoeui"
+          android:singleLine="true"
+          android:padding="3dp"
+          android:textSize="17sp"
+
+          />
+
+
+      <TextView
+          android:id="@+id/titleCOMPANYTELEPHONE"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edittxtCOMPANYADDRESS"
+          android:layout_marginLeft="10dp"
+          android:text="Company telephone"
+          android:layout_marginTop="5dp"
+          android:fontFamily="@font/segoeui"
+          />
+
+      <EditText
+          android:id="@+id/edittxtCOMPANYTELEPHONE"
+          android:inputType="phone"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_below="@id/titleCOMPANYTELEPHONE"
+          android:background="@drawable/rounded_border_items"
+          android:maxLines="1"
+          android:maxLength="11"
+          android:fontFamily="@font/segoeui"
+          android:singleLine="true"
+          android:padding="3dp"
+          android:textSize="17sp"
+
+          />
+      <TextView
+          android:id="@+id/titleFOOTER1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edittxtCOMPANYTELEPHONE"
+          android:layout_marginLeft="10dp"
+          android:text="First footer"
+          android:layout_marginTop="5dp"
+          android:fontFamily="@font/segoeui"
+          />
+
+      <EditText
+          android:id="@+id/edittxtFOOTER1"
+          android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.-"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_below="@id/titleFOOTER1"
+          android:background="@drawable/rounded_border_items"
+          android:maxLines="1"
+          android:maxLength="20"
+          android:fontFamily="@font/segoeui"
+          android:singleLine="true"
+          android:padding="3dp"
+          android:textSize="17sp"
+
+          />
+
+      <TextView
+          android:id="@+id/titleFOOTER2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edittxtFOOTER1"
+          android:layout_marginLeft="10dp"
+          android:text="Second footer"
+          android:layout_marginTop="5dp"
+          android:fontFamily="@font/segoeui"
+          />
+
+      <EditText
+          android:id="@+id/edittxtFOOTER2"
+          android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.-"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_below="@id/titleFOOTER2"
+          android:background="@drawable/rounded_border_items"
+          android:maxLines="1"
+          android:maxLength="20"
+          android:fontFamily="@font/segoeui"
+          android:singleLine="true"
+          android:padding="3dp"
+          android:textSize="17sp"
+
+          />
+
+      <ImageView
+          android:id="@+id/buttonsavereceiptsettings"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:src="@drawable/savereceipt"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_below="@+id/edittxtFOOTER2"
+
+
+
+          />
+
+      <TextView
+          android:layout_marginTop="50dp"
+          android:layout_below="@id/buttonsavereceiptsettings"
+          android:id="@+id/titlecurrency"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Currency "
+          android:layout_marginLeft="5dp"
+          android:textSize="15sp"
+          android:textStyle="bold"
+
+          />
+
+
+
+      <TextView
+          android:id="@+id/txtviewCurrency"
+          android:layout_width="200dp"
+          android:layout_height="30dp"
+          android:fontFamily="@font/segoeui"
+         android:layout_marginTop="10dp"
+          android:padding="3dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_below="@id/titlecurrency"
+          android:background="@drawable/rounded_border_items"
+          android:textColor="@color/black"
+          android:singleLine="true"
+          />
+
+      <Spinner
+          android:id="@+id/spinnerCurrency"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginRight="10dp"
+          android:layout_below="@+id/titlecurrency"
+          android:layout_toRightOf="@id/txtviewCurrency"
+
+          android:layout_marginTop="10dp"
+
+
+          />
+
+      <TextView
+          android:id="@+id/txtviewwhatCurrency"
+          android:layout_width="200dp"
+          android:layout_height="30dp"
+          android:fontFamily="@font/segoeui"
+          android:layout_marginTop="10dp"
+          android:padding="3dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_below="@id/titlecurrency"
+          android:text="what"
+
+          android:textColor="@color/black"
+          android:singleLine="true"
+          android:layout_toRightOf="@id/spinnerCurrency"
+          />
+
+      <ImageView
+          android:id="@+id/buttonsaveCurrency"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:src="@drawable/savecurrency"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_below="@+id/txtviewCurrency"
+
+
+
+          />
+
+
+
+
+
+
+
+
+   </RelativeLayout>
+
+
+
+   </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiwhite"
+    tools:context=".admin.updateclass.EmployeeCreateAccount">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleEditAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employee Registration"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/FN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEditAccount"
+                android:text="First Name"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/segoeui"
+
+                />
+            <TextView
+                android:id="@+id/LN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEditAccount"
+                android:text="First Name"
+                android:textColor="@color/blue"
+                android:layout_toRightOf="@+id/FN"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/segoeui"
+
+                />
+            <TextView
+                android:id="@+id/titleUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FN"
+                android:layout_marginLeft="10dp"
+                android:text="Username"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtemployeeUsername"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleUsername"
+                android:background="@drawable/rounded_border"
+                android:maxLines="1"
+                android:maxLength="15"
+                android:fontFamily="@font/segoeui"
+                android:padding="3dp"
+                android:textSize="17sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/titleonepassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeeUsername"
+                android:layout_marginLeft="10dp"
+                android:text="Password"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtemployeePassword"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleonepassword"
+                android:background="@drawable/rounded_border"
+                android:inputType="textPassword"
+                android:fontFamily="@font/segoeui"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:singleLine="true"
+
+
+                />
+
+            <TextView
+                android:id="@+id/titletwopassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeePassword"
+                android:layout_marginLeft="10dp"
+                android:text="Confirm Password"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtemployeeConfirmPassword"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titletwopassword"
+                android:background="@drawable/rounded_border"
+                android:fontFamily="@font/segoeui"
+                android:inputType="textPassword"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/titleemployeeRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeeConfirmPassword"
+                android:layout_marginLeft="10dp"
+                android:text="Employee's Access"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <TextView
+                android:id="@+id/edittxtemployeeEmployeeRole"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/segoeui"
+                android:text=""
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleemployeeRole"
+                android:background="@drawable/rounded_border"
+                android:textColor="@color/black"
+                android:singleLine="true"
+
+
+                />
+            <Spinner
+                android:id="@+id/spinnerEmployeeRole"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleemployeeRole"
+                android:layout_toRightOf="@id/edittxtemployeeEmployeeRole"
+
+
+
+                />
+
+
+
+            <Button
+                android:id="@+id/btnAddAccountRole"
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_centerInParent="true"
+                android:layout_height="30dp"
+                android:background="@drawable/addnow"
+                android:layout_below="@id/spinnerEmployeeRole"
+                android:layout_marginBottom="5dp"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

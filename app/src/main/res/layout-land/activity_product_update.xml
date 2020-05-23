@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiwhite"
+    tools:context=".admin.updateclass.ProductUpdate">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleEditProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Product"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/titlePRODUCTNAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEditProduct"
+                android:layout_marginLeft="10dp"
+                android:text="Product Name"
+
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edttxtPRODUCTNAMEupdate"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ-.1234567890"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titlePRODUCTNAME"
+                android:background="@drawable/rounded_border"
+                android:maxLines="1"
+                android:maxLength="15"
+                android:singleLine="true"
+
+                android:padding="3dp"
+                android:textSize="17sp"
+
+                android:text="na"
+                />
+
+
+            <TextView
+                android:id="@+id/titlePRODUCTCATEGORY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edttxtPRODUCTNAMEupdate"
+                android:layout_marginLeft="10dp"
+                android:text="Product Category"
+                android:fontFamily="@font/segoeui"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/txtviewPRODUCTCATEGORYupdate"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/segoeui"
+                android:text="CATEGORY"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titlePRODUCTCATEGORY"
+                android:background="@drawable/rounded_border"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerProductCategoryUPDATE"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titlePRODUCTCATEGORY"
+                android:layout_toRightOf="@id/txtviewPRODUCTCATEGORYupdate"
+
+
+
+                />
+
+            <TextView
+                android:id="@+id/titleSUPPLIER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/txtviewPRODUCTCATEGORYupdate"
+                android:layout_marginLeft="10dp"
+                android:text="SUPPLIER"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <TextView
+                android:id="@+id/txtviewSUPPLIERupdate"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/segoeui"
+                android:text="SUPPLIER"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSUPPLIER"
+                android:background="@drawable/rounded_border"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerSupplierUPDATE"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSUPPLIER"
+                android:layout_toRightOf="@id/txtviewSUPPLIERupdate"
+
+
+
+                />
+
+            <TextView
+                android:id="@+id/titleDATEOFVALIDITY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/txtviewSUPPLIERupdate"
+                android:layout_marginLeft="10dp"
+                android:text="Date of Validity"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edttxtDATEOFVALIDITYupdate"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleDATEOFVALIDITY"
+                android:background="@drawable/rounded_border"
+                android:focusable="false"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:clickable="true"
+                android:inputType="none"
+
+                android:text="na"
+                />
+
+
+            <TextView
+                android:id="@+id/titleImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/spinnerProductCategoryUPDATE"
+                android:layout_below="@+id/edttxtPRODUCTNAMEupdate"
+                android:layout_marginLeft="10dp"
+                android:text="Image"
+                android:fontFamily="@font/segoeui"
+                />
+            <ImageView
+
+
+
+                android:id="@+id/buttonCameraUpdate"
+                android:layout_toRightOf="@id/spinnerProductCategoryUPDATE"
+                android:layout_width="100dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/titleImage"
+                android:background="@drawable/camera"
+                />
+            <Button
+                android:id="@+id/pickImageUpdate"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/buttonCameraUpdate"
+                android:layout_toRightOf="@id/spinnerProductCategoryUPDATE"
+
+                android:background="@drawable/chooseimage"
+                />
+
+            <TextView
+                android:id="@+id/titleDATEOFEXPIRY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edttxtDATEOFVALIDITYupdate"
+                android:layout_marginLeft="10dp"
+                android:text="Date of Expiry"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edttxtDATEOFEXPIRYupdate"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleDATEOFEXPIRY"
+                android:background="@drawable/rounded_border"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+
+                android:text="na"
+                />
+
+
+            <TextView
+                android:id="@+id/titleBUYPRICE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edttxtDATEOFEXPIRYupdate"
+                android:layout_marginLeft="10dp"
+                android:text="Buy Price"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edttxtBUYPRICEupdate"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleBUYPRICE"
+                android:background="@drawable/rounded_border"
+                android:fontFamily="@font/segoeui"
+                android:digits="abcdefghijklmnopqrstuvwxyz ,.ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+                android:inputType="numberDecimal"
+                android:padding="3dp"
+                android:textSize="17sp"
+
+                android:singleLine="true"
+
+
+
+                />
+
+            <TextView
+                android:id="@+id/titleSELLPRICE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edttxtBUYPRICEupdate"
+                android:layout_marginLeft="10dp"
+                android:text="Sell Price"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edttxtSELLPRICEupdate"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSELLPRICE"
+                android:background="@drawable/rounded_border"
+                android:fontFamily="@font/segoeui"
+                android:digits="abcdefghijklmnopqrstuvwxyz ,.ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+                android:inputType="numberDecimal"
+                android:padding="3dp"
+                android:textSize="17sp"
+
+                android:singleLine="true"
+
+                android:maxLines="1"
+
+                />
+
+
+
+
+            <Button
+                android:id="@+id/buttonUPDATEPRODUCT"
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_centerInParent="true"
+                android:layout_height="30dp"
+                android:background="@drawable/updatenow"
+                android:layout_below="@id/edttxtSELLPRICEupdate"
+                android:layout_marginBottom="5dp"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

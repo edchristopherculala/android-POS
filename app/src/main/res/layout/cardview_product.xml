@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:id="@+id/selectCard"
+    app:cardCornerRadius="4dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/txtposproductCode"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Code "
+           android:textSize="10sp"
+           android:fontFamily="@font/segoeui"
+           />
+
+       <ImageView
+           android:id="@+id/product_thumbnail"
+           android:layout_width="90dp"
+           android:layout_height="90dp"
+           android:layout_marginTop="5dp"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/txtposproductCode"
+           />
+
+
+       <TextView
+           android:id="@+id/txtposproductSell"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:layout_marginRight="5dp"
+           android:layout_alignParentRight="true"
+           android:layout_marginBottom="5dp"
+           android:text="Sell Price"
+           android:textSize="10sp"
+           android:fontFamily="@font/segoeui"
+           />
+
+
+
+
+
+   </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:id="@+id/txtposproductName"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Product Name"
+            android:textSize="12sp"
+            android:fontFamily="@font/segoeui"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

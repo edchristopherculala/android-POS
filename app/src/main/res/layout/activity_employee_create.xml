@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiwhite"
+    tools:context=".admin.admin_adapters.EmployeeCreate">
+
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:background="@color/semiwhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/titleEditEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Employee"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/titleFN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEditEmployee"
+                android:layout_marginLeft="10dp"
+                android:text="First Name"
+
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtemployeeFirstName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleFN"
+                android:background="@drawable/rounded_border"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:fontFamily="@font/segoeui"
+
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/titleLN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeeFirstName"
+                android:layout_marginLeft="10dp"
+                android:text="Last Name"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtemployeeLastName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleLN"
+                android:background="@drawable/rounded_border"
+
+                android:singleLine="true"
+                android:fontFamily="@font/segoeui"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:maxLines="1"
+                android:maxLength="15"
+
+
+                />
+
+            <TextView
+                android:id="@+id/titleMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeeLastName"
+                android:layout_marginLeft="10dp"
+                android:text="Mobile Number"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtemployeeMobile"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleMobile"
+                android:background="@drawable/rounded_border"
+                android:fontFamily="@font/segoeui"
+                android:inputType="number"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:maxLength="11"
+
+                />
+
+            <TextView
+                android:id="@+id/titleEmailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeeMobile"
+                android:layout_marginLeft="10dp"
+                android:text="Email Address"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtemployeeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleEmailAddress"
+                android:background="@drawable/rounded_border"
+                android:digits="abcdefghijklmnopqrstuvwxyz@.ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:fontFamily="@font/segoeui"
+
+
+                />
+
+            <TextView
+                android:id="@+id/titleEMPLOYEETYPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeeEmail"
+                android:layout_marginLeft="10dp"
+                android:text="Employee Type"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <TextView
+                android:id="@+id/edittxtemployeeEmployeeType"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/segoeui"
+                android:text=""
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleEMPLOYEETYPE"
+                android:background="@drawable/rounded_border"
+                android:textColor="@color/black"
+
+                android:singleLine="true"
+
+                />
+            <Spinner
+                android:id="@+id/spinnerEmployeeType"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleEMPLOYEETYPE"
+                android:layout_toRightOf="@id/edittxtemployeeEmployeeType"
+
+
+
+                />
+
+            <TextView
+                android:id="@+id/titleAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeeEmployeeType"
+                android:layout_marginLeft="10dp"
+                android:text="Address"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtemployeeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleAddress"
+                android:background="@drawable/rounded_border"
+                android:fontFamily="@font/segoeui"
+                android:digits="abcdefghijklmnopqrstuvwxyz ,.ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+                android:padding="3dp"
+                android:textSize="17sp"
+
+                android:singleLine="true"
+
+                android:maxLines="1"
+
+                />
+
+
+
+
+            <Button
+                android:id="@+id/btnAddEmployee"
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_centerInParent="true"
+                android:layout_height="30dp"
+                android:background="@drawable/addnow"
+                android:layout_below="@id/edittxtemployeeAddress"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

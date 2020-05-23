@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiwhite"
+    tools:context=".admin.updateclass.EmployeeTypeUpdate">
+
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleEditEmployeeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Employee Type"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/titleEmployeeTYPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEditEmployeeType"
+                android:layout_marginLeft="10dp"
+                android:text="Employee Type:"
+
+                android:fontFamily="@font/segoeui"
+                />
+
+            <TextView
+                android:id="@+id/employeetypeText"
+                android:layout_toRightOf="@id/titleEmployeeTYPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEditEmployeeType"
+                android:layout_marginLeft="10dp"
+                android:text="Employee Type:"
+
+                android:fontFamily="@font/segoeui"
+                />
+
+
+            <EditText
+                android:id="@+id/edittxtemployeetypeUpdate"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleEmployeeTYPE"
+                android:background="@drawable/rounded_border"
+                android:maxLines="1"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:text="na"
+                />
+
+
+            <TextView
+                android:id="@+id/titleEmployeeDESCRIPTION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeetypeUpdate"
+                android:layout_marginLeft="10dp"
+                android:text="Description:"
+                android:fontFamily="@font/segoeui"
+                />
+
+
+            <TextView
+                android:id="@+id/employeetypeDescriptionText"
+                android:layout_toRightOf="@id/titleEmployeeDESCRIPTION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtemployeetypeUpdate"
+                android:layout_marginLeft="10dp"
+                android:text="Description:"
+                android:fontFamily="@font/segoeui"
+                />
+            <EditText
+                android:id="@+id/edittxtdescriptionUpdate"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleEmployeeDESCRIPTION"
+                android:background="@drawable/rounded_border"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:maxLines="1"
+                android:maxLength="30"
+                android:text="na"
+                />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_centerInParent="true"
+                android:layout_height="30dp"
+                android:background="@drawable/updatenow"
+                android:layout_below="@id/edittxtdescriptionUpdate"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/select_cart_item"
+    android:background="@color/white"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.150"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/txtProductCodeCart"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_below="@id/txtProductNameCart"
+            android:layout_height="wrap_content"
+            android:text="Code"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/segoeui"
+            />
+
+
+        <TextView
+            android:layout_weight="1.50"
+            android:id="@+id/txtProductNameCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtProductQuantityCart"
+            android:layout_width="0dp"
+            android:paddingRight="2dp"
+            android:layout_height="20dp"
+            android:text="Quantity"
+            android:fontFamily="@font/segoeui"
+
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="@drawable/quantity"
+            android:layout_marginLeft="5dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/txtProductPriceCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:fontFamily="@font/segoeui"
+
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+
+            app:autoSizeMaxTextSize="14sp"
+            app:autoSizeMinTextSize="4sp"
+            app:autoSizeStepGranularity="0.5sp"
+            app:autoSizeTextType="uniform"
+
+            />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtProductDiscount"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:text="Discount"
+            android:fontFamily="@font/segoeui"
+            android:paddingRight="2dp"
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/discount"
+
+
+            />
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtProductTotalPriceCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:fontFamily="@font/segoeui"
+
+            android:textSize="12sp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.ViewEmployeeAccounts">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/semiwhite"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/firstHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employee Accounts"
+                android:textSize="25sp"
+
+                android:textColor="@color/blue"
+                android:layout_margin="5dp"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/title"
+                android:id="@+id/recyclerviewEmployeeAccounts"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                ></androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</FrameLayout>

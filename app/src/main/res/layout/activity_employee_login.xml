@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".login.EmployeeLogin">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/secondHolder"
+        android:background="@drawable/transparentholder"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="180dp"
+
+
+        android:layout_height="300dp"
+
+
+
+        >
+
+        <TextView
+            android:id="@+id/loginasemployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login as employee"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+
+
+            />
+
+        <EditText
+            android:id="@+id/inputEditTextEmployeeUsername"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            android:layout_below="@+id/loginasemployee"
+            android:hint="Username"
+            android:background="@drawable/rect_03"
+            android:layout_width="320dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/inputEditTextEmployeePassword"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_03"
+            android:layout_below="@+id/inputEditTextEmployeeUsername"
+            android:hint="Password"
+            android:layout_width="320dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/imageViewButtonEmployeeLogin"
+            android:layout_below="@+id/inputEditTextEmployeePassword"
+            style="@style/ripple"
+            android:layout_width="220dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/buttonemployeelogin"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

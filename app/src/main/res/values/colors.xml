@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="bgColor">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bottomNavigationViewBgColor">#FFDC73</color>
+    <color name="bottomNavigationTint">#FFCF40</color>
+    <color name="gray">#7C7C7C</color>
+    <color name="iconcolor1">#F3BD00</color>
+    <color name="maincolor">#F6F8F8</color>
+    <color name="semiwhite">#F0F0F0</color>
+    <color name="blue">#0882F6</color>
+    <color name="darkyellow">#967A04</color>
+    <color name="red">#ff0000</color>
+    <color name="darkred">#9B1E27</color>
+
+    <color name="darkBlue">#0A4677</color>
+    <color name="semigray">#E1E1E1</color>
+</resources>

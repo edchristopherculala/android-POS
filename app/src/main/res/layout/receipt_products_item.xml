@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="2dp"
+    android:id="@+id/selectitemRPI"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productNameRPI"
+        android:textSize="20sp"
+        android:text="Milk Tea"
+        android:layout_margin="2dp"
+        android:textStyle="bold"
+
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productCodeRPI"
+        android:textSize="20sp"
+        android:text="Code"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/productNameRPI"
+
+
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/one"
+        android:layout_below="@id/productNameRPI"
+
+
+        >
+        <TextView
+            android:id="@+id/textview_suplier_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell Price:"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/segoeui"
+            />
+        <TextView
+            android:id="@+id/txtsellpriceRPI1"
+            android:layout_toRightOf="@id/textview_suplier_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="na"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/segoeui"
+            />
+
+        <TextView
+            android:id="@+id/txtquantityRPI"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/segoeui"
+            />
+        <TextView
+            android:id="@+id/txtX"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtquantityRPI"
+            android:text=" X "
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/segoeui"
+            />
+
+        <TextView
+            android:id="@+id/txtsellpriceRPI"
+            android:layout_toRightOf="@id/txtX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SellP"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/segoeui"
+            />
+
+
+        <TextView
+            android:id="@+id/txtequals"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="= "
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/segoeui"
+            android:layout_toLeftOf="@id/txttotalpriceRPI"
+            />
+
+        <TextView
+            android:id="@+id/txttotalpriceRPI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TotalPrice"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/segoeui"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one"
+     >
+        <TextView
+            android:id="@+id/textview_supplier_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount:"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/segoeui"
+            />
+        <TextView
+            android:id="@+id/txtDiscountRPI"
+            android:layout_toRightOf="@id/textview_supplier_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="na"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/segoeui"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

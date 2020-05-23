@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.ProductMaintenance">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/semiwhite"
+        >
+
+        <LinearLayout
+            android:id="@+id/titleholder"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+           android:layout_marginBottom="5dp"
+            android:layout_weight="4"
+            android:background="@color/blue"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txtProductCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/txtProductDescription"
+                android:layout_weight="0.4"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="PRODUCT CODE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="6sp"
+
+
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/txtProductDescription"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="IMAGE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+
+
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/txtProductDescription"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:text="PRODUCT NAME"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+
+                tools:ignore="RtlCompat" />
+
+
+            <TextView
+                android:id="@+id/txtproductsellprice"
+                android:layout_weight="0.650"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="PRICE"
+                android:textSize="12sp"
+                android:fontFamily="@font/segoeui"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:maxLines="1"
+
+
+
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/txtProductQUANTITY"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.650"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:text="QUANTITY"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/firstHolder"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/titleholder"
+            android:layout_height="match_parent">
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recyclerviewProduct"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</FrameLayout>

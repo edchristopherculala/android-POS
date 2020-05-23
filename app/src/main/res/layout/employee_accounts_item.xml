@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/select_layout_2"
+    android:background="@drawable/rounded_border_items"
+
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+
+    >
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtFN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FirstName"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/segoeui"
+            />
+
+        <TextView
+            android:id="@+id/txtLN"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/txtFN"
+            android:layout_height="wrap_content"
+            android:text="LastName"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeui"
+            />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/first"
+
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/one"
+
+        >
+    <TextView
+        android:id="@+id/textview_employee_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_toRightOf="@id/textview_employee_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="na"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one">
+    <TextView
+        android:id="@+id/textview_employee_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+    <TextView
+        android:id="@+id/txtpassword"
+        android:layout_toRightOf="@id/textview_employee_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="na"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second"
+        >
+    <TextView
+        android:id="@+id/textview_employee_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role:"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+    <TextView
+        android:id="@+id/txtrole"
+        android:layout_toRightOf="@id/textview_employee_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="na"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</LinearLayout>

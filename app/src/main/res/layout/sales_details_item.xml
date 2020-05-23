@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/select_sales_details"
+    android:background="@color/semiwhite"
+    android:layout_marginTop="6dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/qrcodesales"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/one"
+
+
+            >
+
+
+
+            <TextView
+                android:id="@+id/textview_suplier_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/segoeui"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Receipt #:" />
+            <TextView
+                android:id="@+id/txtReceiptNodetails"
+                android:layout_toRightOf="@id/textview_suplier_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="na"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoeui"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/one">
+            <TextView
+                android:id="@+id/textview_supplier_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date:"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoeui"
+                />
+            <TextView
+                android:id="@+id/txtDateDetails"
+                android:layout_toRightOf="@id/textview_supplier_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="na"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoeui"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second">
+            <TextView
+                android:id="@+id/textviewsubtotaldetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total:"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoeui"
+                />
+            <TextView
+                android:id="@+id/txtSubtotalDetails"
+                android:layout_toRightOf="@id/textviewsubtotaldetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="na"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/segoeui"
+                android:textSize="18sp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third">
+            <TextView
+                android:id="@+id/textviewdiscountdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Discount:"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoeui"
+                />
+            <TextView
+                android:id="@+id/txtTotalDiscountDetails"
+                android:layout_toRightOf="@id/textviewdiscountdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="na"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/segoeui"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourth">
+            <TextView
+                android:id="@+id/textviewtotalpricedetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price:"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoeui"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/txtTotalTotalPriceDetails"
+                android:layout_toRightOf="@id/textviewtotalpricedetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="na"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/segoeui"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

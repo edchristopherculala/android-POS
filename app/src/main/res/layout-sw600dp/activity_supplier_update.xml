@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiwhite"
+    tools:context=".admin.updateclass.SupplierUpdate">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleEditSupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Supplier"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/titleSupplierName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEditSupplier"
+                android:layout_marginLeft="10dp"
+                android:text="Supplier Name"
+
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edttxtSuppliernameUpdate"
+                android:digits="abcdefghijklmnopqrstuvwxyz .,-/()ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSupplierName"
+                android:background="@drawable/rounded_border"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:text="na"
+                />
+
+
+            <TextView
+                android:id="@+id/titleSupplierAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edttxtSuppliernameUpdate"
+                android:layout_marginLeft="10dp"
+                android:text="Address"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edttxtSupplierAddressupdate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSupplierAddress"
+                android:background="@drawable/rounded_border"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:digits="abcdefghijklmnopqrstuvwxyz .,-/()ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:maxLines="1"
+                android:maxLength="30"
+
+                android:text="na"
+                />
+
+            <TextView
+                android:id="@+id/titleSupplierEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edttxtSupplierAddressupdate"
+                android:layout_marginLeft="10dp"
+                android:text="E-mail"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edttxtSupplierEmailupdate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSupplierEmail"
+                android:background="@drawable/rounded_border"
+                android:digits="abcdefghijklmnopqrstuvwxyz@.ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:text="na"
+                />
+
+            <TextView
+                android:id="@+id/titleSupplierTelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edttxtSupplierEmailupdate"
+                android:layout_marginLeft="10dp"
+                android:text="Telephone"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edttxtSupplierTelephoneupdate"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSupplierTelephone"
+                android:background="@drawable/rounded_border"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:inputType="number"
+                android:maxLength="11"
+
+                android:text="na"
+                />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/buttonUPDATESupplier"
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_centerInParent="true"
+                android:layout_height="30dp"
+                android:background="@drawable/updatenow"
+                android:layout_below="@id/edttxtSupplierTelephoneupdate"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

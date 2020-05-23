@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_usermaintenance"
+        android:icon="@drawable/usermaintenance"
+        android:title="User Maintenance" />
+
+    <item
+        android:id="@+id/navigation_productcategories"
+        android:icon="@drawable/productcategory"
+        android:title="Product Categories" />
+
+
+    <item
+        android:id="@+id/navigation_productmaintenance"
+        android:icon="@drawable/productmaintenance"
+        android:title="Product Maintenance" />
+
+    <item
+        android:id="@+id/navigation_suppliermaintenance"
+        android:icon="@drawable/supplier"
+        android:title="Supplier Maintenance" />
+
+
+</menu>

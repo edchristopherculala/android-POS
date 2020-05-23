@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiwhite"
+    tools:context=".admin.ReportMaintenance">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/searchHolder"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/firstdateholder"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/txtviewfromdate"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/inputfield"
+                    android:layout_weight=".80"
+                    android:layout_margin="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/segoeui"
+                    />
+
+               <ImageView
+                   android:id="@+id/buttonfromdate"
+                   android:layout_gravity="center_vertical"
+                   android:layout_width="0dp"
+                   android:layout_height="30dp"
+                   android:layout_weight=".20"
+                   android:layout_margin="2dp"
+                   android:background="@drawable/calendar"
+                   />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seconddateholder"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/txtviewtodate"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/inputfield"
+                    android:layout_weight=".80"
+                    android:layout_margin="3dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/segoeui"
+                    />
+
+                <ImageView
+                    android:id="@+id/buttontodate"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="30dp"
+                    android:layout_weight=".20"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/calendar"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/buttonsearchdateReport"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/search"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/title"
+        android:id="@+id/recyclerviewReports"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="50dp"
+
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkBlue"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                >
+
+            <TextView
+                android:id="@+id/titleTotalSales"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/white"
+
+                android:text="Total Sales :"
+                />
+
+            <TextView
+                android:id="@+id/txtTotalSales"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="0"
+                android:textSize="25sp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/titleTotalSales"
+                />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

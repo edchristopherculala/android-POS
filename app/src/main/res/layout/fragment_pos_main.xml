@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".POS.PosMain">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/semiwhite"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/firstHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/spineer1"
+
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+
+                >
+
+                <TextView
+                    android:id="@+id/txtviewproductCategory"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/inputfield"
+                    android:fontFamily="@font/segoeui"
+                    android:padding="3dp"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinnerPRODUCTCATEGORY"
+                    android:layout_width="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:layout_toRightOf="@id/txtviewproductCategory"
+
+
+
+                    />
+
+
+
+                <com.steelkiwi.library.view.BadgeHolderLayout
+                    android:id="@+id/cartbadge"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    app:bhl_default_badge_background="@color/red"
+                    app:bhl_text_color="@android:color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    app:bhl_text_size="8sp"
+                    app:bhl_badge_radius="20dp"
+                    android:layout_toRightOf="@+id/spinnerPRODUCTCATEGORY"
+                    >
+
+                    <ImageView
+                        android:id="@+id/buttoncart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/whitecart"
+                        android:layout_centerVertical="true"
+                        />
+                </com.steelkiwi.library.view.BadgeHolderLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/spineer1"
+                android:id="@+id/rvMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/blue"
+                >
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/titlesubtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="12sp"
+                        android:text="SUBTOTAL:"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+
+                        />
+                    <TextView
+                        android:id="@+id/txtsubtotalPOS"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sub Total"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/titlesubtotal"
+
+                        app:autoSizeMaxTextSize="10sp"
+                        app:autoSizeMinTextSize="4sp"
+                        app:autoSizeStepGranularity="0.5sp"
+                        app:autoSizeTextType="uniform"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/titlediscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DISCOUNT:"
+                        android:fontFamily="@font/segoeui"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_below="@id/titlesubtotal"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:id="@+id/txtdiscountPOS"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Discount"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/segoeui"
+                        android:layout_below="@id/titlesubtotal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/titlesubtotal"
+                        android:textColor="@color/white"
+
+                        app:autoSizeMaxTextSize="10sp"
+                        app:autoSizeMinTextSize="4sp"
+                        app:autoSizeStepGranularity="0.5sp"
+                        app:autoSizeTextType="uniform"
+
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/titletotalprice"
+                    android:layout_width="150dp"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/segoeui"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txttotalpricePOS"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titletotalprice"
+                    android:layout_alignEnd="@+id/titletotalprice"
+
+                    android:textAlignment="textEnd"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/segoeui"
+                    android:text="Total"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:autoSizeMaxTextSize="22sp"
+                    app:autoSizeMinTextSize="4sp"
+                    app:autoSizeStepGranularity="0.5sp"
+                    app:autoSizeTextType="uniform"
+
+
+
+
+
+                    android:textStyle="bold" />
+
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/firstHolderP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+    <TextView
+        android:id="@+id/titleTotalP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeui"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+
+        android:text="Total: "
+        />
+
+    <TextView
+        android:id="@+id/txtviewTotalP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeui"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_toRightOf="@id/titleTotalP"
+        android:text="Total:"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondHolderP"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/firstHolderP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edttexttotalpriceP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="90"
+            android:textColor="@color/blue"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/segoeui"
+            android:textSize="30sp"
+            android:background="@drawable/rounded_border_items"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

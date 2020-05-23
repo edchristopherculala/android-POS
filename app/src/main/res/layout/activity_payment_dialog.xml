@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".POS.PaymentDialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/semiwhite"
+
+        >
+
+        <TextView
+            android:id="@+id/titlepayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textSize="30sp"
+            android:fontFamily="@font/segoeui"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="5dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/titlereceiptno"
+            android:layout_below="@id/titlepayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receipt no."
+
+            android:textSize="20sp"
+            android:fontFamily="@font/segoeui"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtreceiptno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receipt no."
+            android:layout_below="@id/titlepayment"
+            android:layout_toRightOf="@id/titlereceiptno"
+            android:textSize="16sp"
+            android:fontFamily="@font/segoeui"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="14dp"
+
+            />
+
+        <TextView
+            android:id="@+id/titlepaymentsubtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal"
+            android:textSize="18sp"
+            android:fontFamily="@font/segoeui"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/txttotalpayment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="45dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtsubtotalpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlepaymentsubtotal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+
+            android:fontFamily="@font/segoeui"
+            android:text="Sub total"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/titlepaymentdiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textSize="18sp"
+            android:fontFamily="@font/segoeui"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/txtsubtotalpayment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtdiscountpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textSize="18sp"
+            android:fontFamily="@font/segoeui"
+            android:layout_below="@id/titlepaymentdiscount"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/titlepaymenttotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:textSize="22sp"
+            android:fontFamily="@font/segoeui"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_below="@id/qrHolder"
+            android:layout_centerInParent="true"
+
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txttotalpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:textSize="30sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/segoeui"
+            android:layout_below="@id/titlepaymenttotal"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/cashholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtdiscountpayment"
+            >
+
+
+
+        <EditText
+            android:id="@+id/edttxtCash"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+           android:layout_centerInParent="true"
+            android:textAlignment="textEnd"
+            android:background="@drawable/inputfield"
+            android:inputType="numberDecimal"
+            />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/buttoncharge"
+            android:layout_below="@id/cashholder"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+
+        android:background="@drawable/charge"
+        />
+        
+        
+        <ImageView
+
+            android:id="@+id/qrHolder"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/titlepayment"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

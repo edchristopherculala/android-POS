@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiwhite"
+    tools:context=".admin.updateclass.SupplierCreate">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleEditSupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Supplier"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/titleSupplierCODE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEditSupplier"
+                android:layout_marginLeft="10dp"
+                android:text="Supplier Code"
+
+                android:fontFamily="@font/segoeui"
+                />
+
+            <TextView
+                android:id="@+id/edittxtsupplierCode"
+
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSupplierCODE"
+                android:background="@drawable/rounded_border"
+                android:maxLines="1"
+                android:padding="3dp"
+                android:textSize="17sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/titleSupplierName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtsupplierCode"
+                android:layout_marginLeft="10dp"
+                android:text="Supplier Name"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtsupplierName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSupplierName"
+                android:background="@drawable/rounded_border"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:digits="abcdefghijklmnopqrstuvwxyz .,-/()ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:fontFamily="@font/segoeui"
+
+
+                />
+
+            <TextView
+                android:id="@+id/titleSupplierADDRESS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtsupplierName"
+                android:layout_marginLeft="10dp"
+                android:text="Address"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtsupplierAddress"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSupplierADDRESS"
+                android:background="@drawable/rounded_border"
+                android:digits="abcdefghijklmnopqrstuvwxyz .,-/()ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:fontFamily="@font/segoeui"
+
+                />
+
+            <TextView
+                android:id="@+id/titleSupplierEMAIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtsupplierAddress"
+                android:layout_marginLeft="10dp"
+                android:text="Email Address"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtsupplierEmail"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSupplierEMAIL"
+                android:background="@drawable/rounded_border"
+                android:digits="abcdefghijklmnopqrstuvwxyz@.ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:fontFamily="@font/segoeui"
+                android:textSize="17sp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/titlesupplierTELEPHONE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtsupplierEmail"
+                android:layout_marginLeft="10dp"
+                android:text="Telephone"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtsupplierTelephone"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titlesupplierTELEPHONE"
+                android:background="@drawable/rounded_border"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:fontFamily="@font/segoeui"
+
+
+                />
+
+
+
+            <Button
+                android:id="@+id/btnAddSUPPLIER"
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_centerInParent="true"
+                android:layout_height="30dp"
+                android:background="@drawable/addnow"
+                android:layout_below="@id/edittxtsupplierTelephone"
+                android:layout_marginBottom="5dp"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

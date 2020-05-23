@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+   >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+
+            >
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:id="@+id/applogo"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/applogo"
+                android:layout_marginBottom="100dp"
+                />
+
+            <EditText
+                android:layout_below="@id/applogo"
+                android:padding="5dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edittxtUSERNAME"
+                android:hint="Username"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="@drawable/inputfield"
+
+                android:maxLines="1"
+                android:layout_centerHorizontal="true"
+                />
+            <EditText
+                android:padding="5dp"
+                android:layout_below="@id/edittxtUSERNAME"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/edittxtPASSWORD"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="@drawable/inputfield"
+
+                android:maxLines="1"
+                android:maxLength="20"
+                />
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/edittxtPASSWORD"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="@drawable/login"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

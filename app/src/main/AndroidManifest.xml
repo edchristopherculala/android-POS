@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ed.chris.androidpos">
+
+    <uses-sdk tools:overrideLibrary="com.melnykov.fab.FloatingActionButton" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.ed.App"
+        android:allowBackup="true"
+        android:icon="@drawable/test"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".admin.admin_adapters.Add_Stocks_Dialog"
+            android:theme="@style/Theme.AppCompat.Dialog"
+
+            ></activity>
+        <activity
+            android:name=".POS.TransactionalDiscountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".admin.SupplierMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/nLiveoDrawer" />
+        <activity
+            android:name=".admin.ReportMaintenanceMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/nLiveoDrawer" />
+        <activity
+            android:name=".admin.ReceiptInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".POS.EndOfTransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".POS.PaymentDialog"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".POS.DiscountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".POS.UpdateQuantityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".POS.CartItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.updateclass.AddStocks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.updateclass.SupplierUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.updateclass.ProductUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.updateclass.EmployeeUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.ProductMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/nLiveoDrawer" />
+        <activity
+            android:name=".admin.updateclass.ProductMaintenanceAdd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.updateclass.SupplierCreate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.User_Main"
+            android:screenOrientation="portrait"
+            android:theme="@style/nLiveoDrawer" />
+        <activity
+            android:name=".admin.ViewEmployeeAccounts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.updateclass.EmployeeCreateAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.admin_adapters.EmployeeCreate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.create_account.CreateAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.updateclass.EmployeeTypeUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.UserMaintenance"
+            android:screenOrientation="portrait"
+            android:theme="@style/nLiveoDrawer" />
+        <activity
+            android:name=".admin.AdminMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/nLiveoDrawer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.EmployeeLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.AdminLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

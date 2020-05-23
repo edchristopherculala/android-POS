@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.BackupAndRestoreFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+
+            android:id="@+id/buttonBackup"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:src="@drawable/backup"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+
+        <ImageView
+            android:id="@+id/buttonRestore"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/buttonBackup"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:src="@drawable/restore"
+            android:layout_centerHorizontal="true"
+
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

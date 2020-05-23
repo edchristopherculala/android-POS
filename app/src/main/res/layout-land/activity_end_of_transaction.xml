@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".POS.EndOfTransactionActivity">
+
+
+    <ImageView
+
+        android:id="@+id/check"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/success"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/titletotal"
+        android:layout_below="@id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoeui"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txttotalamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titletotal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Amount"
+        android:textSize="25sp"
+        android:fontFamily="@font/segoeui"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/titlechange"
+        android:layout_below="@id/txttotalamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoeui"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txttotalchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlechange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Change"
+        android:textSize="25sp"
+        android:fontFamily="@font/segoeui"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:id="@+id/buttonnewtransaction"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/newtransaction"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        />
+
+</RelativeLayout>

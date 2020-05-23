@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiwhite"
+    tools:context=".admin.updateclass.AddStocks">
+
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleEditProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Stock"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/titlePRODUCTNAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEditProduct"
+                android:layout_marginLeft="10dp"
+                android:text="Product Name"
+
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtPRODUCTNAME"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titlePRODUCTNAME"
+                android:background="@drawable/inputfield"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:padding="3dp"
+                android:textSize="17sp"
+
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/titleproductcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtPRODUCTNAME"
+                android:layout_marginLeft="10dp"
+                android:text="Product Category"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtPRODUCTCATEGORY"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleproductcategory"
+                android:background="@drawable/inputfield"
+                android:focusable="false"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:clickable="true"
+                android:inputType="none"
+
+
+                />
+            <TextView
+                android:id="@+id/titleSUPPLIERNAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtPRODUCTCATEGORY"
+                android:layout_marginLeft="10dp"
+                android:text="Supplier Name"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtSUPPLIERNAME"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleSUPPLIERNAME"
+                android:background="@drawable/inputfield"
+                android:focusable="false"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:clickable="true"
+                android:inputType="none"
+
+
+                />
+            <TextView
+                android:id="@+id/titleQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edittxtSUPPLIERNAME"
+                android:layout_marginLeft="10dp"
+                android:text="QUANTITY"
+                android:fontFamily="@font/segoeui"
+                />
+
+            <EditText
+                android:id="@+id/edittxtQUANTITY"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/titleQuantity"
+                android:background="@drawable/inputfield"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="17sp"
+
+                android:maxLength="7"
+                android:inputType="number"
+
+
+                />
+
+
+
+
+
+            <Button
+                android:id="@+id/btnAddProducts"
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_centerInParent="true"
+                android:layout_height="30dp"
+                android:background="@drawable/addnow"
+                android:layout_below="@id/edittxtQUANTITY"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

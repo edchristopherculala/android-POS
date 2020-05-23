@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:id="@+id/select_layout_1"
+
+    android:background="@drawable/rounded_border_items"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textview_employee_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FirstName"
+        android:fontFamily="@font/segoeui"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textview_employee_last_name"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/textview_employee_first_name"
+        android:layout_height="wrap_content"
+        android:text="LastName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+
+    <ImageView
+        android:id="@+id/imageviewhasAccount"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/key"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/textview_employee_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile:"
+
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+    <TextView
+        android:id="@+id/textview_employee_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+    <TextView
+        android:id="@+id/textview_employeetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EmployeeType:"
+
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <TextView
+
+        android:id="@+id/textview_employee_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/segoeui"
+        />
+
+        <ImageView
+            android:id="@+id/circularAdd"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="7dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:background="@drawable/addaccountcircularbutton"
+            />
+
+        <ImageView
+            android:id="@+id/circularEdit"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="2dp"
+            android:visibility="gone"
+            android:background="@drawable/editcircularbutton"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
